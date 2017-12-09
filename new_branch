@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:src="@drawable/marvin_the_paranoid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:text="@string/wearily1"
+        android:id="@+id/wearily1"
+        android:textColor="@color/colorGreen"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+        android:paddingRight="@dimen/margin_standard"
+        android:paddingLeft="@dimen/margin_standard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/wearily2"
+        android:textSize="@dimen/text_large" />
+
+    <TextView
+        android:text="@string/wearily2"
+        android:id="@+id/wearily2"
+        android:textColor="@color/colorGreen"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:paddingTop="@dimen/margin_standard"
+        android:paddingRight="@dimen/margin_standard"
+        android:paddingBottom="@dimen/margin_extraLarge"
+        android:paddingLeft="@dimen/margin_standard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="@dimen/text_large" />
+
+    <TextView
+        android:text="@string/pain_and"
+        android:layout_above="@id/companions"
+        android:id="@+id/pain"
+        android:textColor="@color/colorGreen"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/margin_standard"
+        android:paddingRight="@dimen/margin_standard"
+        android:paddingTop="@dimen/margin_standard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/text_large"/>
+
+    <TextView
+        android:text="@string/error_messages"
+        android:layout_above="@id/companions"
+        android:layout_toRightOf="@id/pain"
+        android:id="@+id/error_messages"
+        android:textColor="@color/colorRed"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:paddingRight="@dimen/margin_standard"
+        android:paddingTop="@dimen/margin_standard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_large"/>
+
+    <TextView
+        android:text="@string/my_only"
+        android:id="@+id/companions"
+        android:textColor="@color/colorGreen"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="bold"
+        android:paddingLeft="@dimen/margin_standard"
+        android:paddingRight="@dimen/margin_standard"
+        android:paddingBottom="@dimen/margin_large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="@dimen/text_large"/>
+
+    <ImageView
+        android:src="@drawable/smiley"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:paddingBottom="@dimen/margin_standard"
+        android:paddingRight="@dimen/margin_medium"
+        />
+
+</RelativeLayout>
